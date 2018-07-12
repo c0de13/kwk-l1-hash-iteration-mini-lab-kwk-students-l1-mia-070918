@@ -13,6 +13,8 @@ def create_olympics_hash
 end
 
 
+#///////////////////////////////////////////////////////////////////////
+
 
 
 def add_a_key_value_pair
@@ -24,24 +26,35 @@ def add_a_key_value_pair
 end
 
 
+#//////////////////////////////////////////////////////////////////////
+
+
 
 
 def iterate_through_hash
   # Implement this method so that it iterates over the hash created in add_a_key_value_pair
+  
   # and puts each key value pair within the phrase "The _____ summer olympics took place in _____."
   
-  
   summer_olympics = add_a_key_value_pair
-  count = 0 
-  while count < summer_olympics.length 
-    puts "The #{ summer_olympics[count].values } summer olympics took place in #{ summer_olympics[count].keys  }."
   
-    count += 1 
-  end 
-  #end of while
+  #count = 0 
+  #while count < summer_olympics.length 
+   # puts "The #{ summer_olympics[count].values } summer olympics took place in #{ summer_olympics[count].keys  }."
+  
+    #count += 1 
+  #end #of while
+  summer_olympics.each do |x|
+    puts 
+  
+  
+  
+  
 end
 
 
+
+#/////////////////////////////////////////////////////////////////////
 
 
 
@@ -49,3 +62,6 @@ def iterate_through_keys
   # Implement this method so that it converts the keys of the hash created in add_a_key_value_pair
   # into uppercased Strings, creates a new array with these values, and then puts each upcase key in the CLI
 end
+
+
+
