@@ -44,10 +44,11 @@ def iterate_through_hash
   
     #count += 1 
   #end #of while
+  
   summer_olympics.each do |x|
-    puts 
+    puts "The #{summer_olympics[x]} summer olympics took place in #{x}."
   
-  
+  end
   
   
 end
